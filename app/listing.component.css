@@ -1,0 +1,162 @@
+.elem__icon{
+	width: 36px;
+	height: 36px;
+	margin: auto;
+	background: url('img/sprite.png') no-repeat 5px 5px;
+	background-size: 80%;
+	cursor: pointer;
+	display: none;
+	position: relative;
+	z-index: 1;
+}
+.elem__icon:hover,
+.elem__icon.active{
+	background-position: 5px -33px;
+}
+.elem__icon.visible{
+	display: block;
+}
+.elem {
+  height: 333px;
+  background-color: #fff;
+  border-radius: 3px;
+  color: #313131;
+  margin-bottom: 20px;
+  padding: 14px 27px 30px;
+  box-shadow: 0 0 19px -1px rgba(0, 0, 0, 0.15);
+}
+.elem__types:before{
+	content:"Loading...";
+	font-size: 14px;
+	color: grey;
+	line-height: 35px;
+	position: absolute;
+}
+.elem__icon-wrap {
+  background-color: #ECECEC;
+  border-radius: 3px;
+  color: #E94B35;
+  height: 36px;
+  width: 36px;
+  text-align: center;
+  line-height: 36px;
+  position: absolute;
+  top: 13px;
+  right: 28px;
+}
+.elem__icon {
+  line-height: 36px;
+}
+.elem__media-wrap {
+  line-height: 200px;
+  height: 200px;
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.elem__media {
+  padding: 5px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.elem__name {
+  font-size: 18px;
+  color: #787878;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.elem__types {
+  font-size: 0;
+}
+.elem__types div {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  width: 48%;
+  font-size: 18px;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 2px;
+  color: #fff;
+}
+.elem__types div:nth-child(odd) {
+  margin-right: 4%;
+}
+
+.loader {
+  opacity: 0;
+  margin: auto;
+  max-width: 250px;
+  transition: all .25s ease-out;
+  height: 0;
+  overflow: hidden;
+}
+.loader__media {
+  max-width: 100%;
+  max-height: 100%;
+}
+.loader__text {
+  text-align: center;
+  font-size: 18px;
+}
+.loader.active {
+  opacity: 1;
+  height: auto;
+  transition: all .25s ease-out;
+}
+.button{
+	display: block;
+	margin: 0 auto 20px;
+	width: 130px;
+	font-size: 17px;
+	margin-bottom: 100px;
+}
+.poison{
+	background-color: #1BAF5D;
+}
+.grass{
+	background-color: #02A085;
+}
+.fire{
+	background-color: #FF7561;
+}
+.water{
+	background-color: #2D96DD;
+}
+.ground{
+	background-color: #D55300;
+}
+.ghost{
+	background-color: #3F3953;
+}
+.rock{
+	background-color: #AEABB6;
+}
+.electric{
+	background-color: #344860;
+}
+.normal{
+	background-color: #94A6A7;
+}
+.ice{
+	background-color: #E4EBF3;
+}
+.steel{
+	background-color: #888785;
+}
+.fighting{
+	background-color: #2C3E51;
+}
+.psychic{
+	background-color: #D8B72F;
+}
+.flying{
+	background-color: #9C55B8;
+}
+.bug{
+	background-color: #172432;
+}
+.fairy{
+	background-color: #FF5DCF;
+}
