@@ -5,7 +5,7 @@
 	background: url('img/sprite.png') no-repeat 5px 5px;
 	background-size: 80%;
 	cursor: pointer;
-	display: none;
+	/*display: none;*/
 	position: relative;
 	z-index: 1;
 }
@@ -85,11 +85,11 @@
 }
 
 .loader {
-  opacity: 0;
+  /*opacity: 0;*/
   margin: auto;
   max-width: 250px;
   transition: all .25s ease-out;
-  height: 0;
+  /*height: 0;*/
   overflow: hidden;
 }
 .loader__media {
@@ -101,7 +101,7 @@
   font-size: 18px;
 }
 .loader.active {
-  opacity: 1;
+  /*opacity: 1;*/
   height: auto;
   transition: all .25s ease-out;
 }
@@ -159,4 +159,24 @@
 }
 .fairy{
 	background-color: #FF5DCF;
+}
+
+.error-message{
+	/*transition: transform .25s ease-out;*/
+	/*transform: translateY(100%);*/
+	background-color: #F9E224;
+	min-width: 300px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	position: fixed;
+	z-index: 30;
+	bottom: 0;
+	right: 0;
+	max-width: 500px;
+	padding: 10px 15px;
+	border-radius: 3px;
+}
+.error-message.active{
+	/*transform: translateY(0);*/
 }

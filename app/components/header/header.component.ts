@@ -16,7 +16,7 @@ import { Router } from '@angular/router';
       	</div>
       </div>
     `,
-    styleUrls: ['./app/header.component.css'],
+    styleUrls: ['./app/components/header/header.component.css'],
 })
 export class HeaderComponent {
 }

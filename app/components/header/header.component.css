@@ -28,7 +28,8 @@
   color: #fff;
   transition: background-color .25s ease-out;
 }
-.header__link:hover {
+.header__link:hover,
+.header__link.active {
   color: #fff;
   text-decoration: none;
   background-color: #008DA3;

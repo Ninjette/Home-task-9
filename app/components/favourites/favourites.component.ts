@@ -20,15 +20,19 @@ import { Router } from '@angular/router';
 				</div>
 			</div>
 		</div>
+		<div class="loader">
+			<img  class="loader__media" src="img/loader.gif"/>
+			<p class="loader__text">loading...</p>
+		</div>
     `,
-     styleUrls: ['./app/favourites.component.css'],
+     styleUrls: ['./app/components/favourites/favourites.component.css'],
 })
-export class favouritesComponent {
-	elemMask = 'elem_';
-	favouritesArray = [];
 
-	ngOnInit(): void {
-		console.log('ngOnInit');
+export class favouritesComponent {
+	elemMask:string = 'elem_';
+	favouritesArray:string[] = [];
+
+	ngOnInit(){
 		//get desired pokemons from Local Storage
 		let lsLength = localStorage.length;
 		if (lsLength > 0) {
@@ -41,3 +45,4 @@ export class favouritesComponent {
 		};
 	}
 }
+
